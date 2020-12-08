@@ -1,0 +1,20 @@
+https://api.telegram.org/bot1454387924:AAHDaJdeRCTKHt82Nvw_nbt43Mo1oc7BJpY/getUpdates
+        
+-487419851
+
+https://api.telegram.org/bot1454387924:AAHDaJdeRCTKHt82Nvw_nbt43Mo1oc7BJpY/sendMessage?chat_id=-487419851&text="This is Spoorthy's first msg"
+https://api.telegram.org/bot1454387924:AAHDaJdeRCTKHt82Nvw_nbt43Mo1oc7BJpY/getUpdates
+        
+-487419851
+​
+https://api.telegram.org/bot1454387924:AAHDaJdeRCTKHt82Nvw_nbt43Mo1oc7BJpY/sendMessage?chat_id=-487419851&text="This is Spoorthy's first msg"
+import requests
+import time
+​
+msg=["Hello Sir!","You're eligible to order anything you want to purchase in Amazon","You can order whatever you want within 2 minutes","The offer is going to close now","Thanks for your cooperation","I know you didn't order anything","Because your friend Spoorthy has fixed time for only 2 minutes","Thanks for reading al these msgs","Bye"]
+​
+for m in msg:
+    
+    base_url="https://api.telegram.org/bot1454387924:AAHDaJdeRCTKHt82Nvw_nbt43Mo1oc7BJpY/sendMessage?chat_id=-487419851&text='{}'".format(m)
+    requests.get(base_url)
+    time.sleep(3)
